@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perplexity | Software Trainee Internship 2024–2027</title>
+  <meta name="description" content="Apply for the Perplexity Software Trainee Internship 2024–2027. Install Commit, sign up, and grow with Perplexity.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0b/Perplexity_AI_Logo.png" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade { animation: fadeIn 0.8s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .loader {
+      border: 3px solid #e5e7eb;
+      border-top: 3px solid #6366f1;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="https://images.seeklogo.com/logo-png/51/1/perplexity-ai-logo-png_seeklogo-517845.png" alt="Perplexity" class="h-10 w-10 rounded-lg" />
+        <div>
+          <h1 class="text-xl font-semibold">Perplexity Internship Portal</h1>
+          <p class="text-sm text-gray-500">Software Trainee • 2024–2027 Batches</p>
+        </div>
+      </div>
+      <a href="#apply" class="text-indigo-600 font-medium hover:text-indigo-800 transition">Apply Now →</a>
+    </div>
+  </header>
+
+  <!-- HERO / ABOUT -->
+  <section class="max-w-6xl mx-auto px-6 py-16 text-center fade">
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Launch Your Career with <span class="text-indigo-600">Perplexity</span></h2>
+    <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      Perplexity is offering an exclusive <strong>Software Trainee Internship</strong> opportunity for students graduating between <strong>2024 and 2027</strong>.
+      This internship helps you explore Artificial Intelligence, Data Systems, and Real-World Application Development through hands-on mentorship.
+    </p>
+    <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+      Candidates must install and use the <strong>Perplexity Commit</strong> browser extension as part of the onboarding process, followed by sign-up with their email to activate access.
+    </p>
+    <div class="mt-8">
+      <a href="#apply" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition font-medium">
+        Start Application
+      </a>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section id="apply" class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-10 mt-10 fade">
+    <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900">Software Trainee Internship Application</h3>
+    <p class="text-center text-gray-600 mb-8">
+      Fill in your details below to begin. After submitting, you’ll be redirected to install the browser extension and sign up with your email ID.
+      <br /><strong>No data is stored — this page is purely promotional.</strong>
+    </p>
+
+    <form id="internForm" class="max-w-3xl mx-auto space-y-6">
+      <div class="grid md:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-medium mb-1">Full Name</label>
+          <input type="text" id="name" required placeholder="Your full name" class="w-full border rounded-md px-3 py-2 focus:ring-2 focus:ring-indigo-500" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Phone Number</label>
+          <input type="tel" id="phone" required placeholder="+91 9876543210" class="w-full border rounded-md px-3 py-2 focus:ring-2 focus:ring-indigo-500" />
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-medium mb-1">Email Address</label>
+          <input type="email" id="email" required placeholder="you@example.com" class="w-full border rounded-md px-3 py-2 focus:ring-2 focus:ring-indigo-500" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Year of Graduation</label>
+          <select id="gradYear" required class="w-full border rounded-md px-3 py-2 focus:ring-2 focus:ring-indigo-500">
+            <option value="">Select year</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-medium mb-1">Course</label>
+          <input type="text" id="course" placeholder="e.g. B.Tech, B.Sc, MCA" class="w-full border rounded-md px-3 py-2 focus:ring-2 focus:ring-indigo-500" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Branch / Specialization</label>
+          <input type="text" id="branch" placeholder="e.g. Computer Science, IT" class="w-full border rounded-md px-3 py-2 focus:ring-2 focus:ring-indigo-500" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">College / University</label>
+        <input type="text" id="college" placeholder="Your college name" class="w-full border rounded-md px-3 py-2 focus:ring-2 focus:ring-indigo-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Upload Resume (PDF only)</label>
+        <input type="file" id="resume" accept="application/pdf" required class="w-full border rounded-md px-3 py-2 text-sm file:mr-4 file:py-2 file:px-4 file:border-0 file:rounded-md file:bg-indigo-600 file:text-white hover:file:bg-indigo-700 cursor-pointer" />
+      </div>
+
+      <div class="flex items-start gap-3">
+        <input type="checkbox" id="agreeTerms" required class="mt-1" />
+        <label for="agreeTerms" class="text-sm">
+          I confirm that I will install the <strong>Perplexity Commit</strong> extension, sign up with my email ID, and follow the activation process after submission.
+        </label>
+      </div>
+
+      <div class="text-center pt-4">
+        <button type="submit" id="submitBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-medium transition">
+          Submit Application
+        </button>
+        <p id="formMsg" class="text-sm mt-3"></p>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-100 text-center py-6 mt-16 text-gray-600 text-sm">
+    © 2025 Perplexity | Software Trainee Internship Portal  
+    <br />For educational and promotional purposes only — no data collected.
+  </footer>
+
+  <!-- MOBILE BLOCKER -->
+  <div id="mobileOverlay" class="hidden fixed inset-0 bg-black/70 items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-xl max-w-sm text-center">
+      <h3 class="text-lg font-semibold mb-2">Please Use a Laptop or Desktop</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        Internship registration and browser extension installation are supported only on laptop or desktop browsers.
+      </p>
+      <button id="okBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md">OK</button>
+    </div>
+  </div>
+
+  <script>
+    const REFERRAL_LINK = "https://pplx.ai/nallalokes68759";
+    const overlay = document.getElementById('mobileOverlay');
+    const okBtn = document.getElementById('okBtn');
+    const form = document.getElementById('internForm');
+    const msg = document.getElementById('formMsg');
+
+    function isMobile() {
+      return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 900;
+    }
+
+    window.onload = () => {
+      if (isMobile()) {
+        overlay.classList.remove('hidden');
+        overlay.style.display = 'flex';
+      }
+    };
+
+    okBtn.onclick = () => overlay.classList.add('hidden');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const year = document.getElementById('gradYear').value;
+      const agree = document.getElementById('agreeTerms').checked;
+
+      if (!['2024','2025','2026','2027'].includes(year)) {
+        msg.textContent = "❌ Only 2024–2027 batches are eligible.";
+        msg.className = "text-red-600 text-sm mt-3";
+        return;
+      }
+
+      if (!agree) {
+        msg.textContent = "⚠️ Please confirm Commit installation agreement.";
+        msg.className = "text-red-600 text-sm mt-3";
+        return;
+      }
+
+      msg.innerHTML = '<span class="loader"></span>Submitting your details...';
+      msg.className = "text-gray-700 text-sm mt-3 font-medium";
+
+      // Step 1: Show "Submitting..." for 5 seconds
+      setTimeout(() => {
+        msg.innerHTML = "✅ We are inviting you to install the <strong>Perplexity Commit</strong> browser extension.<br>After installation, sign up with your email ID and ask one query to ensure the extension is working properly.<br><br>Our team will contact you soon.";
+        msg.className = "text-green-600 text-sm mt-3 text-center";
+
+        // Step 2: Redirect after 15 seconds
+        setTimeout(() => {
+          window.location.href = REFERRAL_LINK;
+        }, 15000);
+      }, 5000);
+    });
+  </script>
+
+</body>
+</html>
